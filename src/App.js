@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />}></Route>
+        <Route exact={true} path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/cocktail/:id" element={<SingleCocktail />}></Route>
         <Route path="*" element={<Error />}></Route>
